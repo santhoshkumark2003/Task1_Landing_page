@@ -1,0 +1,945 @@
+:root {
+  --orange: #ff6f20;
+  --offwhite: #fefcfb;
+  --light: #f7f8fc;
+  --light-txt-color: #666666;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* margin-left: 30px; */
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  /* width: 100%; */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+.btn.dark {
+  background: var(--orange);
+}
+.btn.light {
+  background: var(--offwhite);
+}
+.btn.dark.email {
+  font-weight: normal;
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+/* header section css started */
+header .wrapper {
+  background-color: var(--offwhite);
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.navbar .logo .logo-icon h6 {
+  margin-left: -120px;
+  font-size: 18px;
+  font-family: volkhov, sans-serif;
+}
+.navbar .logo .logo-icon {
+  margin-right: 40px;
+  margin-left: -40px;
+}
+.navbar .logo .logoimg {
+  margin-left: -80px;
+  margin-top: -65px;
+  width: 30px;
+  height: 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 20;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+nav .login-sign-in a {
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+nav .login-sign-in .login-highlight {
+  color: var(--orange);
+  font-weight: 500;
+  margin-right: 20px;
+  padding-left: 200px;
+}
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 50px;
+  padding-bottom: 140px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .logo .logoimg {
+  padding-bottom: 10px;
+}
+.highlight {
+  color: var(--orange);
+}
+.hero-section .left {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
+}
+.hero-section .left h1 {
+  font-family: volkhov, sans-serif;
+  font-size: 56px;
+  line-height: 56px;
+  margin-top: 200px;
+}
+.hero-section .left p {
+  margin-right: 650px;
+  width: 400px;
+  color: var(--light-txt-color);
+}
+.hero-section .left .discover-icon {
+  color: var(--orange);
+  font-weight: 500;
+  border: #ff6f20 1px solid;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+.hero-section .right .hero-img {
+  margin-top: -60px;
+  position: absolute;
+  right: 400px;
+}
+.hero-section .right .hero-img img {
+  position: absolute;
+  margin-top: -40px;
+}
+.hero-section .right .hero-img::before {
+  content: url("assets/hero-bg.png");
+  right: -500px;
+  top: 240px;
+  position: absolute;
+}
+.hero-section .right .hero-img::after {
+  content: url("assets/hero-img-above.svg");
+  right: -130px;
+  top: -85px;
+  width: 300px;
+  position: absolute;
+}
+
+.achievement-card .content {
+  border-radius: 24px;
+  background: white;
+  padding: 8px 32px;
+  position: absolute;
+}
+.achievement-card h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px 0px 0px 10px;
+  text-align: center;
+}
+
+.achievement-card.award img {
+  position: absolute;
+  right: 120px;
+  top: 20px;
+}
+.achievement-card.award {
+  position: absolute;
+  right: 370px;
+  top: 0px;
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+.achievement-card.explore {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  right: -80px;
+  top: 115px;
+  width: 180px;
+  height: 70px;
+  padding: 30px 10px 10px 90px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+.achievement-card.explore img {
+  position: absolute;
+  right: 145px;
+  top: 19px;
+}
+.achievement-card.explore p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  top: 15px;
+  margin-left: 20px;
+  left: 15px;
+  color: var(--light-txt-color);
+}
+.achievement-card.explore h3 {
+  position: absolute;
+  top: 5px;
+  left: 35px;
+}
+.achievement-card.rating .content {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  right: 250px;
+  top: 230px;
+  display: flex;
+  width: 230px;
+  height: 70px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+.achievement-card.rating img {
+  position: absolute;
+  right: 185px;
+  top: 16px;
+}
+.achievement-card.rating p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  top: 15px;
+  margin-left: 70px;
+  width: 250px;
+  left: -15px;
+  color: var(--light-txt-color);
+}
+.achievement-card.rating h3 {
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+.l {
+  position: relative;
+  top: 0px;
+  margin-top: 50px;
+  margin-left: 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+  width: 800px;
+  margin-bottom: 100px;
+}
+.l .location-date {
+  display: flex;
+  align-items: center;
+}
+.location-date .card {
+  position: relative;
+}
+.location-date .card .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  left: 100px;
+  margin-left: 10px;
+}
+.location-date .card .content p {
+  margin-left: 10px;
+  width: 200px;
+}
+.location-date .discover-icon {
+  position: relative;
+  color: #fff;
+  background-color: var(--orange);
+  font-weight: 500;
+  border: #ff6f20 1px solid;
+  border-radius: 12px;
+  margin-top: 0px;
+  margin-left: 100px;
+  left: -100px;
+}
+.location-date .card p {
+  color: var(--light-txt-color);
+  margin-top: -10px;
+  width: 250px;
+}
+/* header section completed */
+/* things to do section started */
+
+.things-to-do {
+  background-color: var(--light);
+  width: 1440px;
+  height: 100vh;
+}
+section .things-to-do {
+  position: relative;
+  padding-top: 150px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light);
+}
+wrapper .things-to-do {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.things-to-do {
+  background-color: var(--light);
+}
+.things-to-do .content .heading {
+  font-family: volkhov, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+.things-to-do .content .heading::after {
+  content: url(assets/plane-pic.svg);
+  position: relative;
+  right: -350px;
+  top: -70px;
+}
+.things-to-do .content .para {
+  text-align: center;
+  margin-top: -140px;
+}
+.things-to-do .td-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+.things-to-do .td-card .card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  background-color: #fff;
+  margin: 30px;
+  height: 250px;
+  padding-left: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+/* things to do section completed */
+/* deals and discounts started */
+.deals-discount {
+  background-color: var(--offwhite);
+  width: 1440px;
+  height: 100vh;
+}
+section .deals-discount {
+  position: relative;
+  padding-top: 150px;
+  width: 100%;
+  height: 100vh;
+}
+wrapper .deals-discount {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deals-discount .content {
+  text-align: center;
+  margin: 0px auto;
+}
+.deals-discount .content p {
+  color: var(--light-txt-color);
+}
+.deals-discount .content h1 {
+  font-family: volkhov, sans-serif;
+  padding-top: 60px;
+}
+.deals-discount .dealcards {
+  display: flex;
+  gap: 30px;
+  margin-left: 120px;
+  margin-top: 60px;
+}
+.deals-discount .dealcards .card {
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+.deals-discount .dealcards .card .card2 {
+  position: relative;
+}
+.deals-discount .dealcards .card .i {
+  position: absolute;
+  top: 195px;
+  right: 60px;
+}
+.deals-discount .dealcards .card .first-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.deals-discount .dealcards .card .first-info img {
+  width: 15px;
+  height: 15px;
+}
+.deals-discount .dealcards .card .first-info p {
+  color: var(--light-txt-color);
+}
+.deals-discount .dealcards .card .second-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.deals-discount .dealcards .card .second-info p button {
+  background-color: #ffe7db;
+  text-decoration: none;
+  border: #fff;
+  border-radius: 5px;
+  color: var(--orange);
+  font-weight: 700;
+}
+.deals-discount .arrow {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.deals-discount .arrow .left-arrow {
+  margin-left: 650px;
+}
+/* deals and discounts completed */
+/* vaction plan section started */
+
+.vacation-plan {
+  background-color: var(--offwhite);
+  width: 1440px;
+  height: 100vh;
+}
+section .vacation-plan {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.vacation-plan {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vacation-plan .content {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+.vacation-plan .content p {
+  color: var(--light-txt-color);
+  text-align: center;
+}
+.vacation-plan .content h1 {
+  font-family: volkhov, sans-serif;
+  padding-top: 60px;
+  text-align: center;
+}
+.vacation-plan .content::after {
+  content: url(assets/tree-element.png);
+  position: relative;
+  right: -300px;
+  top: -160px;
+}
+.vacation-plan .arrow {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: -80px;
+}
+.vacation-plan .arrow .left-arrow {
+  margin-left: 1200px;
+}
+.vacation-plan .offerscards {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 0px;
+  height: 460px;
+}
+.vacation-plan .offerscards .card {
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+}
+.vacation-plan .offerscards .card .first-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.vacation-plan .offerscards .card .second-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.vacation-plan .offerscards .card .second-info p {
+  color: var(--light-txt-color);
+}
+.vacation-plan .offerscards .card .second-info img {
+  width: 15px;
+  height: 15px;
+}
+
+/* vaction plan section completed */
+/* about us section started */
+.about-us {
+  background-color: var(--light);
+  width: 1440px;
+  height: 100vh;
+  display: flex;
+  gap: 50px;
+  margin-top: 250px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+.about-us .left {
+  margin-top: -200px;
+  margin-left: -150px;
+}
+.about-us .left .content h1 {
+  font-family: volkhov, sans-serif;
+  width: 350px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.about-us .left .content p {
+  width: 450px;
+}
+.about-us .arrow {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  gap: 20px;
+  margin-top: 20px;
+}
+.right {
+  position: relative;
+  margin-bottom: 200px;
+}
+.about-us .right .review {
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  width: 430px;
+  height: 200px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+  z-index: 2;
+}
+.about-us .right .review .quote p {
+  margin-left: 30px;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+.about-us .right .review .info {
+  text-align: justify;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.about-us .right .bckgrd .info {
+  text-align: justify;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.about-us .right .info h5 {
+  margin: 0;
+  padding: 0;
+}
+.about-us .right .info p {
+  margin: 2px 0 0;
+  padding: 0;
+}
+.about-us .right .bckgrd {
+  background-color: var(--light);
+  color: #666666;
+  border-radius: 12px;
+  position: absolute;
+  width: 430px;
+  height: 200px;
+  box-shadow: 0px 10px 40px rgba(151, 145, 145, 0.2);
+  text-align: justify;
+  padding-top: 70px;
+  margin-top: 20px;
+  top: 60px;
+  right: -60px;
+  z-index: 1;
+}
+.about-us .right .review::after {
+  content: url(assets/men.png);
+  position: absolute;
+  top: -30px;
+  left: -35px;
+}
+.about-us .right .bckgrd::after {
+  content: url(assets/email-plane-design.svg);
+  position: absolute;
+  top: -160px;
+  left: 380px;
+}
+/* about us section completed */
+/* blog section started */
+.blog {
+  background-color: var(--offwhite);
+  width: 1440px;
+  height: 100vh;
+  padding-top: 50px;
+}
+.blog .content {
+  text-align: center;
+  font-size: 22px;
+  font-family: volkhov, sans-serif;
+}
+.blog .blogcards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.blog .blogcards .card .first-info h5 {
+  width: 200px;
+  font-weight: 500;
+}
+.blog .blogcards .card .second-info p {
+  color: var(--light-txt-color);
+}
+.blog .dot-img {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+/* blog section completed */
+/* footer section started */
+footer .email {
+  background-color: var(--orange);
+  margin-left: 150px;
+  width: 1140px;
+  height: 400px;
+  border-radius: 12px;
+  position: relative;
+}
+footer .email h1 {
+  margin-left: 200px;
+  padding-top: 70px;
+  color: #fff;
+  width: 700px;
+  line-height: 50px;
+  font-size: 45px;
+  text-align: center;
+  font-family: volkhov, sans-serif;
+}
+footer .email form {
+  position: absolute;
+  top: 200px;
+}
+footer .email form input {
+  width: 600px;
+  height: 60px;
+  margin-left: 250px;
+  margin-top: 50px;
+  border: 12px solid #fff;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer .email form::after {
+  content: url(assets/mail.png);
+  position: absolute;
+  right: 560px;
+  padding-top: 70px;
+}
+footer .email form .em {
+  display: inline-block;
+  padding: 14px 32px;
+  border: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  background-color: var(--orange);
+  margin-top: 56px;
+  right: 10px;
+}
+footer .email img {
+  margin-top: -120px;
+  width: 430px;
+}
+footer .email::after {
+  content: url(assets/tree-element.png);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+footer .linkcontainers {
+  margin-left: 150px;
+  width: 1140px;
+  justify-content: center;
+  display: grid;
+  gap: 140px;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 100px;
+}
+footer .linkcontainers .info p {
+  width: 300px;
+  color: var(--light-txt-color);
+}
+footer .linkcontainers .info h3 {
+  font-family: volkhov, sans-serif;
+}
+footer .linkcontainers .links a {
+  text-decoration: none;
+  color: var(--light-txt-color);
+}
+footer .linkcontainers .links ul {
+  list-style: none;
+  padding-left: 0px;
+}
+footer .linkcontainers .links ul li {
+  margin: 16px 0;
+}
+footer .h-line {
+  margin: 0 auto;
+  padding-left: 140px;
+}
+footer .copyrights-terms {
+  margin-left: 150px;
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  gap: 45%;
+  color: var(--light-txt-color);
+}
+/* footer section completed */
+/* Media Queries */
+@media (max-width: 768px) {
+  /* header section */
+  .btn {
+    padding: 16px 32px;
+  }
+  .hero-section {
+    margin-top: 180px;
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .hero-section .left {
+    margin-left: 320px;
+  }
+  .hero-section .left p {
+    width: 800px;
+    font-size: 20px;
+  }
+  .hero-section .right {
+    position: relative;
+    right: -450px;
+    margin-top: 50px;
+  }
+  .achievement-card.award {
+    top: 0px;
+  }
+  .achievement-card.explore {
+    top: 115px;
+    right: -80px;
+  }
+  .achievement-card .rating {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .l {
+    margin-top: 370px;
+  }
+  /* things to do  */
+  .things-to-do .content h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .things-to-do .content p {
+    font-size: 20px;
+  }
+  .things-to-do .td-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .things-to-do {
+    height: auto;
+    width: 1600px;
+    margin-left: 100px;
+  }
+  /* deals and discount section */
+  .deals-discount .content h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-left: 150px;
+  }
+  .deals-discount .content p {
+    font-size: 20px;
+    margin-left: 120px;
+  }
+  .deals-discount .dealcards {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .deals-discount .dealcards .card .outer {
+    height: 600px;
+    width: 600px;
+  }
+  .deals-discount {
+    height: auto;
+    width: 1600px;
+  }
+  .deals-discount .dealcards .card .i {
+    position: absolute;
+    top: 400px;
+    right: 240px;
+  }
+  .deals-discount .arrow .left-arrow {
+    margin-top: 20px;
+    margin-left: 800px;
+  }
+  /* vaction plan section */
+  .vacation-plan {
+    height: 2600px;
+    width: 1400px;
+    margin-left: 30px;
+  }
+  .vacation-plan .offerscards {
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    bottom: 900px;
+    top: 50px;
+    margin-left: 300px;
+  }
+  .vacation-plan .offerscards .card .outer {
+    height: 600px;
+    width: 600px;
+  }
+  .vacation-plan .content h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-left: 280px;
+  }
+  .vacation-plan .content p {
+    font-size: 20px;
+    margin-left: 280px;
+  }
+  .vacation-plan .content::after {
+    content: url(assets/tree-element.png);
+    position: relative;
+    right: -500px;
+    top: -160px;
+  }
+  /* about us section */
+  .about-us .left .content h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .about-us .left .content p {
+    font-size: 20px;
+  }
+
+  .about-us {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 400px;
+    padding-top: 100px;
+    margin-left: 200px;
+  }
+  .about-us .left {
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  /* blog section  */
+  .blog .content h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .blog {
+    height: 900px;
+    margin-left: 200px;
+  }
+  .blog .blogcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 200px;
+  }
+  .blog .blogcards .card .outer {
+    height: 600px;
+    width: 600px;
+  }
+  /* footer section */
+  footer {
+    margin-top: 2500px;
+    margin-left: 200px;
+  }
+  footer .linkcontainers {
+    grid-template-columns: auto auto;
+  }
+}
+/* Media Queries completed */
